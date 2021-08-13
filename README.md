@@ -12,9 +12,11 @@ Este projeto consiste no desenvolvimento de um código focado em testes automati
 
    ### Principais funcionalidades
 
-    • Teste automatizado da aplicação
-    • Teste de unidade
-    • Levantamento de exeções
+    > Teste automatizado da aplicação
+      • Teste de unidade
+      • Classe de equivalencia
+      
+    > Levantamento de exeções
     
 ## Tecnologias utilizadas:
 
