@@ -15,9 +15,8 @@ Este projeto consiste no desenvolvimento de um código focado em testes automati
     > Teste automatizado da aplicação
       • Teste de unidade
       • Classe de equivalencia
-      
-    > Isolamento da criação de cenários  
-    > Levantamento de exeções
+      • Isolamento da criação de cenários  
+      • Levantamento de exeções
     
 ## Tecnologias utilizadas:
 
