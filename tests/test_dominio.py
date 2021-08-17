@@ -57,14 +57,14 @@ class TestAvaliador(TestCase):
         vini = Usuario('Vini')
         lance_do_vini = Lance(vini,200.0)
 
-        leilao = Leilao('Celular')
 
-        leilao.propoe(self.lance_do_gui)
-        leilao.propoe(lance_do_yuri)
-        leilao.propoe(lance_do_vini)
+
+        self.leilao.propoe(self.lance_do_gui)
+        self.leilao.propoe(lance_do_yuri)
+        self.leilao.propoe(lance_do_vini)
 
         avaliador = Avaliador()
-        avaliador.avalia(leilao)
+        avaliador.avalia(self.leilao)
 
         menor_valor_esperado = 100
         maior_valor_esperado = 200
