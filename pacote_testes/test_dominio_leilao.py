@@ -22,7 +22,7 @@ class TestLeilao(TestCase):
         self.assertEqual(maior_valor_esperado, self.leilao.maior_lance)
 
 
-    def test_nao_deve_permitir_propor_um_lance_em_ordem_decrescente(self):
+    def test_nao_deve_permitir_propor_um_lance_em_ordem_decrescente2(self):
 
         with self.assertRaises(ValueError):
             yuri = Usuario('Yuri', 500.0)
