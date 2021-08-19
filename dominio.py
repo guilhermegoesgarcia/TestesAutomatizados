@@ -7,6 +7,9 @@ class Usuario:
         self.__carteira = carteira
 
     def propoe_lance(self, leilao,valor):
+        if valor> self.__carteira:
+            raise ValueError('O usuário não pode propor lances maior do que o valor contido na carteira ! __SALDO INSUFICIENTE__')
+
         lance = Lance(self, valor)
         leilao.propoe(lance)
 
