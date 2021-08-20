@@ -18,7 +18,7 @@ class TestLeilao(TestCase):
         menor_valor_esperado = 100
         maior_valor_esperado = 150
 
-        self.assertEqual(menor_valor_esperado, self.leilao.menor_lance)
+        self.assertEqual(menor_valor_esperado, self.leilao.menor_lance) # valor esperado, valor que o programa devolveu
         self.assertEqual(maior_valor_esperado, self.leilao.maior_lance)
 
 
@@ -80,6 +80,6 @@ class TestLeilao(TestCase):
 
         lance_do_gui200 = Lance(self.gui, 200.0)
 
-        with self.assertRaises(ValueError):
+        with self.assertRaises(ValueError): # esperando exceção
             self.leilao.propoe(self.lance_do_gui)
             self.leilao.propoe(lance_do_gui200)
