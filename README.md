@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.python.org/" target="blank"><img src="https://www.python.org/static/img/python-logo.png" width="320" alt="Nest Logo" /></a>
+  <a href="https://rpaframework.org/index.html#" target="blank"><img src="https://intellyx.com/wp-content/uploads/2021/04/robocorp2-intellyx-BC-logo2020-1200x628-1.png" width="350" alt="Nest Logo" /></a>
 </p>
 
 
