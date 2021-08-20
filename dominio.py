@@ -1,3 +1,4 @@
+from excecoes import LanceInvalido
 
 
 class Usuario:
@@ -8,7 +9,7 @@ class Usuario:
 
     def propoe_lance(self, leilao,valor):
         if not self.__valor_eh_valido(valor):
-            raise ValueError('O usuário não pode propor lances maior do que o valor contido na carteira ! __SALDO INSUFICIENTE__')
+            raise LanceInvalido('O usuário não pode propor lances maior do que o valor contido na carteira ! __SALDO INSUFICIENTE__')
 
         lance = Lance(self, valor)
         leilao.propoe(lance)
@@ -51,7 +52,7 @@ class Leilao:
 
             self.__lances.append(lance)
         else:
-            raise ValueError('Erro ao propor lance.')
+            raise LanceInvalido('Erro ao propor lance.')
 
     @property
     def lances(self):

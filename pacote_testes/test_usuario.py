@@ -1,6 +1,9 @@
 from dominio import Usuario,Leilao
 import pytest
 
+from excecoes import LanceInvalido
+
+
 @pytest.fixture
 def vini():
     return Usuario('Vini', 100.0)
@@ -33,7 +36,7 @@ def test_deve_permitir_quando_o_lance_e_igual_valor_da_carteira(vini, leilao):
     assert vini.carteira == 0.0
 
 def test_nao_deve_permitir_propor_lance_maior_que_contido_na_carteira(vini,leilao):
-    with pytest.raises(ValueError): # estamos esperando a exceção
+    with pytest.raises(LanceInvalido): # estamos esperando a exceção
 
 
         vini.propoe_lance(leilao,200.0)
